@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/ec2-user/cicd
+cd /home/ec2-user/cicd/target
 sudo java -jar demo-0.0.1-SNAPSHOT.jar
