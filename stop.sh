@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo killall java
+killall java
+
