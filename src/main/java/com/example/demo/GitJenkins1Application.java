@@ -14,7 +14,7 @@ public class GitJenkins1Application {
 		System.out.println("4st jenkins project");
 		System.out.println("CICD");
 		System.out.println("9th CICD");
-		System.out.println("please chal");
+		System.out.println("pzzlease chal");
 
 
 
