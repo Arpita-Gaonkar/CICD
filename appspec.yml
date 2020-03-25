@@ -1,1 +1,29 @@
+version: 0.0
+os: linux
 
+files:
+  - source: /
+    destination: /home/ec2-user/cicd
+    
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+    
+hooks:
+  ApplicationStop:
+    - location: stop.sh
+      timeout: 300
+      runas: ec2-user
+#   BeforeInstall:
+#     - location: install_dependencies.sh
+#       timeout: 300
+#       runas: ec2-user
+#     - location: create_or_update_service.sh
+#       timeout: 300
+#       runas: ec2-user
+  ApplicationStart:
+    - location: start.sh
+      timeout: 300
+      runas: ec2-user
