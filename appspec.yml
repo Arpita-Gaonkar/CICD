@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: target/demo-0.0.1-SNAPSHOT.jar
-    destination: /home/ec2-user/cicd
+    destination: /home/ec2-user/cicd/
     
 # permissions:
 #   - object: /
