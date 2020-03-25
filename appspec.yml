@@ -13,7 +13,7 @@ permissions:
     
 hooks:
   ApplicationStop:
-    - location: stop.sh
+    - location: ./stop.sh
       timeout: 300
       runas: root
 #   BeforeInstall:
@@ -24,6 +24,6 @@ hooks:
 #       timeout: 300
 #       runas: ec2-user
   ApplicationStart:
-    - location: start.sh
+    - location: ./start.sh
       timeout: 300
       runas: root
